@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
     <title>Conferencia Hawuai Platzi</title>
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" data-bs-offset="57" tabindex="0">
+  <body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent" s" tabindex="0">
       <!-- Header -->
     <header>
       <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
@@ -37,7 +37,7 @@
                 <a class="nav-link" href="#conviertete-en-orador">Conviertete en Orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-platzi" href="#">Comprar Tickets</a>
+                <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#ModalCompra">Comprar Tickets</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -89,7 +89,7 @@
                     Ven a conocer a miembros del Team Platzi, a otros estudiantes de Platzi y a los oradores
                   conferencistas de primer nivel que tenemos para ti. Te esperamos!  </p>
                   <a href="#" class="btn btn-outline-light"> Quiero ser Orador</a>
-                  <button type="button" class="btn btn-platzi">Comprar Tickets</button>
+                  <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#ModalCompra">Comprar Tickets</button>
                   </div>
                 </div>
               </div>
@@ -260,6 +260,38 @@ la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada qu
   </div>
 </footer>
 <!-- End Footer -->
+<!--  Modal-A -->
+<div class="modal fade" id="ModalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Compra tus Tickets</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form>
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="basic-addon1">@</span>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+          </div>
+        </div>
+        </div>
+      </form>
+      <div class="alert alert-warning" role="alert">
+      Te llegara un email si llegas a ser ganador
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-platzi">Registrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal-A -->
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
